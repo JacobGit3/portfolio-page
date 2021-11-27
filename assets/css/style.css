@@ -77,8 +77,94 @@ header nav ul li a {
 }
 
 .hero img { 
+    margin: 15px;
     float: left;
     width: 100%;
     border: solid 5px var(--secondary-color);
     border-radius: 15px;
+}
+
+/* END OF HERO STYLES */
+
+/* BIO STYLES */
+
+.bio {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    border-top: var(--primary-color) 5px solid;
+    border-bottom: var(--primary-color) 5px solid;
+}
+
+.bio img {
+    margin: 20px 0;
+    border: var(--primary-color) 5px solid;
+    border-radius: 15px;
+    color: var(--primary-color);
+}
+
+.bio bio-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bio h1 {
+    text-align: center;
+    margin:20px;
+}
+
+.bio p {
+    margin: 10px auto;
+    text-align: center;
+    border: solid 3px var(--primary-color);
+    border-radius: 15px;
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* End OF BIO STYLE */
+
+/* PORTFOLIO STYLES */
+
+.portfolio {
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+.portfolio h2 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    border: var(--primary-color) 3px solid;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.project {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio img {
+    border-radius: 15px;
+    border: solid var(--secondary-color) 5px;
+    margin: 10px;
 }
