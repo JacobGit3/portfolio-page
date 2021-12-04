@@ -69,13 +69,6 @@ header nav ul li a {
     background-color: var(--tertiary-color);
 }
 
-.hero image {
-    margin: 20px 0;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    flex: 1;
-}
-
 .hero img { 
     margin: 15px;
     float: left;
@@ -100,12 +93,19 @@ header nav ul li a {
     border-bottom: var(--primary-color) 5px solid;
 }
 
+.image {
+    justify-content: center;
+    width: 30%;
+}
+
 .bio img {
     margin: 20px 0;
     border: var(--primary-color) 5px solid;
     border-radius: 15px;
     color: var(--primary-color);
     flex: 1;
+    width: 100%;
+    justify-content: center;
 }
 
 .bio-text{
@@ -150,7 +150,7 @@ header nav ul li a {
 .project {
     width: 100%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: center;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -160,13 +160,28 @@ header nav ul li a {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .portfolio img {
     border-radius: 15px;
     border: solid var(--secondary-color) 5px;
     margin: 10px;
+}
+
+.thumbnail {
+    margin: 0 10px;
+}
+
+
+.thumbnail-large {
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.thumbnail-large img {
+    width: 100%;
+    justify-content: center;
 }
 
 /* END OF PORTFOLIO STYLES */
@@ -203,7 +218,7 @@ header nav ul li a {
 }
 
 /* Form Style */
-form{
+form {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     border: var(--primary-color) 5px solid;
@@ -274,4 +289,42 @@ footer img {
     width: 50px;
     float: right;
     margin: 15px;
+}
+
+/* END OF FOOTER STYLE */
+
+/* MEDIA QUERIES */
+
+/* Small desktops */
+@media screen and (max-width:980px) {
+    .thumbnail img{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width:768px) {
+    .contact > * {
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .info {
+        flex-basis: 100%;
+    }
+}
+
+/* Phones */
+@media screen and (max-width:575px) {
+    .bio > * {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bio img {
+        justify-content: center;
+        width: 60%;
+        margin: 0 20%;
+    }
 }
